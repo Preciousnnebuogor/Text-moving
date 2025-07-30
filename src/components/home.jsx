@@ -3,12 +3,12 @@ import { useState } from "react";
 export default function Home() {
   const [text, setText] = useState("");
   const [storeResult, setStoreResult] = useState(0);
-  const arr = ["My name is Osemeke Precious", "I'm a Frontend Developer"];
+  const arr = ["Hi","My name is Osemeke Precious", "I'm a Frontend Developer"];
 
   setInterval(() => {
     const resultIndex = Math.floor(Math.random() * arr.length);
     setStoreResult(resultIndex);
-  }, 3000);
+  }, 5000);
 
   return (
     <div className="container">
